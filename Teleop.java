@@ -4,20 +4,19 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.lib.Subsystems.TelemetryMode;
-import org.firstinspires.ftc.teamcode.subsystems.DriveSubsystem;
-import org.firstinspires.ftc.teamcode.subsystems.IntakeSubsystem;
+import org.firstinspires.ftc.teamcode.subsystems.ExampleSubsystem;
 
 @TeleOp
 public class Teleop extends OpMode {
     private Subsystems subsystems = new Subsystems();
 
-    private DriveSubsystem drive = new DriveSubsystem(TelemetryMode.PRINT);
-    private IntakeSubsystem intake = new IntakeSubsystem(TelemetryMode.SILENT);
+    // TODO: instantiate subsystems here
+    private ExampleSubsystem example = new ExampleSubsystem(TelemetryMode.SILENT);
 
     @Override
     public void init() {
-        subsystems.add(drive);
-        subsystems.add(intake);
+        // TODO: add subsystems here
+        subsystems.add(example);
 
         subsystems.init(hardwareMap);
     }
